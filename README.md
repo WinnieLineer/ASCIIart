@@ -3,6 +3,7 @@
 **Transform your images into stunning ASCII masterpieces!**
 
 **Description**
+
 This Java-based application creates breathtaking ASCII art from your digital images. By mapping pixel intensities to a carefully curated character set, we offer a unique and artistic way to represent your favorite photos.
 
 **Features**
