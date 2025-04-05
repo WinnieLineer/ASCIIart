@@ -1,45 +1,48 @@
-## **ASCII Art Generator**
+# ASCII 藝術生成器
 
-**Transform your images into stunning ASCII masterpieces!**
+這是一個將圖片轉換為 ASCII 藝術的 Java 應用程式。
 
-**Description**
+## 功能特點
 
-This Java-based application creates breathtaking ASCII art from your digital images. By mapping pixel intensities to a carefully curated character set, we offer a unique and artistic way to represent your favorite photos.
+- 支援任意圖片格式
+- 可自定義輸出寬度
+- 可自定義字符集
+- 自動調整圖片大小
+- 灰階轉換
 
-**Features**
-* **Versatile Image Support:** Handles a wide range of image formats (JPEG, PNG, GIF, etc.).
-* **Customizable Character Sets:** Choose from predefined or create your own character sets for endless possibilities.
-* **Dynamic Resizing:** Automatically adjusts image size to fit your desired output dimensions.
-* **Color Themes:** Apply various color themes for enhanced visual appeal.
-* **Output Flexibility:** Export your ASCII art as text files, images, or display it directly in the console.
+## 使用方式
 
-**How it works:**
-1. **Image Upload:** Simply provide the path to your image.
-2. **ASCII Conversion:** Our algorithm analyzes the image and maps pixel intensities to corresponding characters.
-3. **Customization:** Fine-tune your output with various options like character set, color theme, and size.
-4. **Enjoy:** Admire your newly created ASCII artwork!
+```bash
+java -jar ASCIIart.jar <圖片路徑> [字符集] [寬度]
+```
 
-**Customization Options:**
-* **Character Sets:** Explore a variety of character sets to achieve different styles.
-* **Color Themes:** Apply color palettes to match your preferences.
-* **Animation:** Create dynamic ASCII art sequences.
+### 參數說明
 
-**Examples:**
+- `圖片路徑`：要轉換的圖片檔案路徑（必填）
+- `字符集`：用於轉換的字符集（選填，預設為 " .▪◆●■█"）
+- `寬度`：輸出寬度（選填，預設為 80）
 
-![image](https://github.com/user-attachments/assets/1738506e-ec1f-48c9-a515-f4b13b2bc5cc)
+### 範例
 
-**Contributing:**
-Welcome contributions from the community!
+```bash
+# 使用預設設定
+java -jar ASCIIart.jar image.jpg
 
-**License:**
-This project is licensed under the MIT License.
+# 自定義字符集和寬度
+java -jar ASCIIart.jar image.jpg "@%#*+=-:. " 100
+```
 
-**Technologies Used:**
-* **Java:** Core programming language
-* **ImageIO:** For image processing
+## 開發環境
 
-**Roadmap:**
-* **Feature 1:** Implement real-time image processing.
-* **Feature 2:** Add support for vector graphics.
+- Java 8 或更高版本
+- Maven 3.6 或更高版本
 
-**Let's create some ASCII magic together!**
+## 建置方式
+
+```bash
+mvn clean package
+```
+
+## 授權
+
+MIT License
